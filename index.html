@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clicker-spil</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="screen">
+      <div id="game">
         <div id="game_background"></div>
-        <div id="game_elements"></div>
-        <div id="game_ui"></div>
+        <div id="game_elements">
+          <div id="robber_container1">
+            <img id="robber1" src="/images/robbery.png" />
+          </div>
+          <div id="civilian_container1">
+            <img id="civilian1" src="/images/woman.png" />
+          </div>
+          <div id="civilian_container2">
+            <img id="civilian2" src="/images/girl.png" />
+          </div>
+        </div>
+        <div id="game_ui">
+          <div id="score_board"></div>
+          <div id="life_board">
+            <div id="life_board_container">
+              <img id="life_board" src="/images/lifeboard.png" />
+            </div>
+          </div>
+          <div id="time_board"></div>
+        </div>
+      </div>
     </div>
     <div id="start"></div>
     <div id="game_over"></div>
     <div id="level_complete"></div>
-    
-</body>
+  </body>
 </html>
