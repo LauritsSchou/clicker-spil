@@ -13,7 +13,6 @@ img {
 }
 #game {
   grid-area: 1 / 1;
-  background-color: blue;
   overflow: hidden;
   display: grid;
   grid-template-columns: 10% / 10%;
