@@ -1,0 +1,32 @@
+/* @keyframes robber1_walk {
+  0% {
+    transform: translate(150%, -20%);
+  }
+  15% {
+    transform: translate(150%, 0%);
+  }
+  100% {
+    transform: translate(800%, 0);
+  }
+}
+.robber1 {
+  animation-name: robber1_walk;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+} */
+@keyframes civilian1_walk {
+  0% {
+    transform: translate(300%, -20%);
+  }
+  15% {
+    transform: translate(300%, 0%);
+  }
+  100% {
+    transform: translate(-900%, 0);
+  }
+}
+.civilian1 {
+  animation-name: civilian1_walk;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}

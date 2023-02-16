@@ -46,6 +46,12 @@ img {
   bottom: 9%;
   right: 37%;
 }
+#soldier1_container {
+  width: 7%;
+  position: absolute;
+  top: 13%;
+  right: 37%;
+}
 #game_ui {
   grid-area: 1 / 1;
   position: relative;
