@@ -1,4 +1,4 @@
-/* @keyframes robber1_walk {
+@keyframes robber1_walk {
   0% {
     transform: translate(150%, -20%);
   }
@@ -13,7 +13,7 @@
   animation-name: robber1_walk;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-} */
+}
 @keyframes civilian1_walk {
   0% {
     transform: translate(300%, -20%);
@@ -29,4 +29,31 @@
   animation-name: civilian1_walk;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+}
+@keyframes civilian2_walk {
+  0% {
+    transform: translate(250%, -20%);
+  }
+  15% {
+    transform: translate(250%, 0%);
+  }
+  100% {
+    transform: translate(1100%, 0%);
+  }
+}
+.civilian2 {
+  animation-name: civilian2_walk;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes die {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+.paused {
+  animation-play-state: paused;
 }
