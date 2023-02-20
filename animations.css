@@ -30,7 +30,7 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-@keyframes civilian2_walk {
+/* @keyframes civilian2_walk {
   0% {
     transform: translate(250%, -20%);
   }
@@ -45,7 +45,7 @@
   animation-name: civilian2_walk;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-}
+} */
 @keyframes die {
   0% {
     transform: rotateX(0deg);

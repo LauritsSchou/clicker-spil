@@ -40,7 +40,7 @@ img {
   bottom: 8%;
   left: 37%;
 }
-#civilian2_container {
+/* #civilian2_container {
   width: 6%;
   position: absolute;
   bottom: 9%;
@@ -51,7 +51,7 @@ img {
   position: absolute;
   top: 13%;
   right: 37%;
-}
+} */
 #game_ui {
   grid-area: 1 / 1;
   position: relative;
