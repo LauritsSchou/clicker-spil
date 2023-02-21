@@ -1,4 +1,9 @@
+"use strict";
+
 window.addEventListener("load", start);
+let points = 0;
+let lives = 3;
+
 function start() {
   console.log("start");
   document.querySelector("#robber1_container").classList.add("robber1_walk");
@@ -22,6 +27,14 @@ function dieRobber() {
   document
     .querySelector("#robber1_container")
     .addEventListener("animationend", deadRobber);
+  incrementPoints();
+}
+function incrementPoints() {
+  points++;
+  displayPoints();
+  function displayPoints() {
+    document.querySelector("#robber_count").textContent = points;
+  }
 }
 function deadRobber() {
   console.log("deadRobber");
@@ -48,7 +61,18 @@ function dieCivilian() {
   document
     .querySelector("#civilian1_container")
     .addEventListener("animationend", deadCivilian);
+  decrementLives();
 }
+function decrementLives() {
+  lives--;
+  displayDecrementLives();
+}
+function displayDecrementLives() {
+  console.log(`#heart${lives}`);
+  document.querySelector(`#heart${lives + 1}`).classList.remove("active_heart");
+  document.querySelector(`#heart${lives + 1}`).classList.add("broken_heart");
+}
+
 function deadCivilian() {
   console.log("deadCivilian");
   document

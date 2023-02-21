@@ -55,11 +55,15 @@ img {
 #game_ui {
   grid-area: 1 / 1;
   position: relative;
+  font-size: 4em;
+  font-family: sans-serif;
+  color: black;
 }
+
 #life_board {
-  margin-block-start: 1.2em;
+  margin-block-start: 0.2em;
   display: grid;
-  grid-template-columns: 4em 4em 4em;
+  grid-template-columns: 1em 1em 1em;
 }
 
 #life_board img {
@@ -78,14 +82,24 @@ img {
   width: 12%;
   position: absolute;
   top: 0%;
-  left: 50%;
+  right: 0%;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  font-size: 1em;
 }
-#time_board {
+#robber_count {
+  white-space: nowrap;
+  text-align: right;
+}
+#robber_image {
+  width: 1em;
+}
+/* #time_board {
   width: 5%;
   position: absolute;
   top: 0%;
   right: 0%;
-}
+} */
 .active_heart {
   filter: drop-shadow(0 0 2px yellow);
 }
