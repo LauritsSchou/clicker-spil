@@ -12,6 +12,7 @@
 .robber1 {
   animation-name: robber1_walk;
   animation-duration: 5s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 @keyframes civilian1_walk {
@@ -46,7 +47,7 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
 } */
-@keyframes die {
+@keyframes rotate {
   0% {
     transform: rotateX(0deg);
   }
@@ -54,8 +55,8 @@
     transform: rotateX(90deg);
   }
 }
-.die {
-  animation-name: die;
+.rotate {
+  animation-name: rotate;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

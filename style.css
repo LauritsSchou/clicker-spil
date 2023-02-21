@@ -57,10 +57,22 @@ img {
   position: relative;
 }
 #life_board {
-  width: 25%;
+  margin-block-start: 1.2em;
+  display: grid;
+  grid-template-columns: 4em 4em 4em;
+}
+
+#life_board img {
+  width: 100%;
+}
+#heart_container {
   position: absolute;
-  top: 0%;
-  left: 0%;
+
+  top: 0;
+  left: 55vw;
+}
+#heart_sprite {
+  width: 100%;
 }
 #score_board {
   width: 12%;
@@ -73,4 +85,11 @@ img {
   position: absolute;
   top: 0%;
   right: 0%;
+}
+.active_heart {
+  filter: drop-shadow(0 0 2px yellow);
+}
+
+.broken_heart {
+  filter: grayscale(75%) blur(0.5px);
 }
