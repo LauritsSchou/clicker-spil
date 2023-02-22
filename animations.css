@@ -9,7 +9,7 @@
     transform: translate(800%, 0);
   }
 }
-.robber1 {
+.robber1_walk {
   animation-name: robber1_walk;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -26,7 +26,7 @@
     transform: translate(-900%, 0);
   }
 }
-.civilian1 {
+.civilian1_walk {
   animation-name: civilian1_walk;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -57,9 +57,10 @@
 }
 .rotate {
   animation-name: rotate;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  transform-origin: bottom;
 }
 .paused {
   animation-play-state: paused;
