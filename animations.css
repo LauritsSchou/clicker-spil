@@ -28,7 +28,7 @@
 }
 .civilian1_walk {
   animation-name: civilian1_walk;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 /* @keyframes civilian2_walk {
