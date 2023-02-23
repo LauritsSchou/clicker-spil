@@ -24,6 +24,9 @@ function incrementPoints() {
   displayPoints();
   function displayPoints() {
     document.querySelector("#robber_count").textContent = points;
+    if (points > 2) {
+      levelComplete();
+    }
   }
 }
 function deadRobber() {
@@ -48,6 +51,9 @@ function dieCivilian() {
 function decrementLives() {
   lives--;
   displayDecrementLives();
+  if (lives == 0) {
+    gameOver();
+  }
 }
 function displayDecrementLives() {
   console.log(`#heart${lives}`);
@@ -64,4 +70,23 @@ function deadCivilian() {
   document.querySelector("#civilian1_container").offsetWidth;
   document.querySelector("#civilian1_container").classList.add("civilian1_walk");
   document.querySelector("#civilian1_container").addEventListener("click", dieCivilian);
+}
+function levelComplete() {
+  document.querySelector("#level_complete").classList.remove("hidden");
+  document.querySelector("#levelCompleteMessage").textContent = `Congratulations. You killed ${points} robbers`;
+
+  end();
+}
+
+function gameOver() {
+  console.log("game over");
+  document.querySelector("#game_over").classList.remove("hidden");
+  end();
+}
+
+function end() {
+  document.querySelector("#robber1_container").classList.remove("robber1_walk");
+  document.querySelector("#civilian1_container").classList.remove("civilian1_walk");
+  document.querySelector("#robber1_container").removeEventListener("click", dieRobber);
+  document.querySelector("#civilian1_container").removeEventListener("click", dieCivilian);
 }
