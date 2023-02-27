@@ -29,29 +29,54 @@ img {
   overflow: hidden;
 }
 #robber1_container {
-  width: 7%;
+  width: 4%;
   position: absolute;
-  bottom: 10%;
+}
+#robber2_container {
+  width: 4%;
+  position: absolute;
+}
+#robber3_container {
+  width: 4%;
+  position: absolute;
+}
+
+#civilian1_container {
+  width: 3%;
+  position: absolute;
+}
+#civilian2_container {
+  width: 3%;
+  position: absolute;
+}
+#civilian3_container {
+  width: 3%;
+  position: absolute;
+}
+.position1 {
+  bottom: 0%;
   left: 45%;
 }
-#civilian1_container {
-  width: 6%;
-  position: absolute;
-  bottom: 8%;
-  left: 37%;
+.position2 {
+  bottom: 2.6%;
+  left: 45%;
 }
-/* #civilian2_container {
-  width: 6%;
-  position: absolute;
-  bottom: 9%;
-  left: 37%;
+.position3 {
+  bottom: 5.2%;
+  left: 45%;
 }
-#soldier1_container {
-  width: 7%;
-  position: absolute;
-  top: 13%;
-  right: 37%;
-} */
+.position4 {
+  bottom: 7.8%;
+  left: 45%;
+}
+.position5 {
+  bottom: 10.4%;
+  left: 45%;
+}
+.position6 {
+  bottom: 13%;
+  left: 45%;
+}
 #game_ui {
   grid-area: 1 / 1;
   position: relative;
