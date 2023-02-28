@@ -58,24 +58,33 @@ img {
   left: 45%;
 }
 .position2 {
-  bottom: 2.6%;
+  bottom: 3.33%;
   left: 45%;
 }
 .position3 {
-  bottom: 5.2%;
+  bottom: 6.66%;
   left: 45%;
 }
 .position4 {
-  bottom: 7.8%;
+  bottom: 9.99%;
   left: 45%;
 }
 .position5 {
-  bottom: 10.4%;
+  bottom: 13%;
   left: 45%;
 }
 .position6 {
-  bottom: 13%;
+  bottom: 16%;
   left: 45%;
+}
+.speed1 {
+  animation-duration: 4s;
+}
+.speed2 {
+  animation-duration: 5s;
+}
+.speed3 {
+  animation-duration: 6s;
 }
 #game_ui {
   grid-area: 1 / 1;

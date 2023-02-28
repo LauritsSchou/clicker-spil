@@ -10,7 +10,6 @@
 
 .robber1_walk {
   animation-name: robber1_walk;
-  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -25,7 +24,6 @@
 }
 .civilian1_walk {
   animation-name: civilian1_walk;
-  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }

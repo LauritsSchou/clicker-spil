@@ -10,6 +10,7 @@ function start() {
   addPosition();
   registerClicks();
   animationRestart();
+  addSpeed();
 }
 function startAnimation() {
   document.querySelector("#robber1_container").classList.add("robber1_walk");
@@ -44,6 +45,14 @@ function animationRestart() {
   document.querySelector("#civilian2_container").addEventListener("animationiteration", civilianRestart);
   document.querySelector("#civilian3_container").addEventListener("animationiteration", civilianRestart);
 }
+function addSpeed() {
+  document.querySelector("#robber1_container").classList.add("speed1");
+  document.querySelector("#robber2_container").classList.add("speed2");
+  document.querySelector("#robber3_container").classList.add("speed3");
+  document.querySelector("#civilian1_container").classList.add("speed1");
+  document.querySelector("#civilian2_container").classList.add("speed2");
+  document.querySelector("#civilian3_container").classList.add("speed3");
+}
 function dieRobber() {
   console.log("dieRobber");
   let robber = this;
@@ -69,6 +78,10 @@ function robberRestart() {
   robber.classList.remove("robber1_walk");
   robber.offsetWidth;
   robber.classList.add("robber1_walk");
+  robber.classList.remove("speed1", "speed2", "speed3");
+  let speed = Math.floor(Math.random() * 3) + 1;
+  robber.classList.add("speed" + speed);
+
   robber.classList.remove("position1", "position2", "position3", "position4", "position5", "position6");
   let pos = Math.floor(Math.random() * 6) + 1;
   robber.classList.add("position" + pos);
@@ -99,6 +112,10 @@ function civilianRestart() {
   civilian.classList.remove("civilian1_walk");
   civilian.offsetWidth;
   civilian.classList.add("civilian1_walk");
+  civilian.classList.remove("speed1", "speed2", "speed3");
+  let speed = Math.floor(Math.random() * 3) + 1;
+  civilian.classList.add("speed" + speed);
+
   civilian.classList.remove("position1", "position2", "position3", "position4", "position5", "position6");
   let pos = Math.floor(Math.random() * 6) + 1;
   civilian.classList.add("position" + pos);
@@ -141,7 +158,15 @@ function gameOver() {
 
 function end() {
   document.querySelector("#robber1_container").classList.remove("robber1_walk");
+  document.querySelector("#robber2_container").classList.remove("robber1_walk");
+  document.querySelector("#robber3_container").classList.remove("robber1_walk");
   document.querySelector("#civilian1_container").classList.remove("civilian1_walk");
+  document.querySelector("#civilian2_container").classList.remove("civilian1_walk");
+  document.querySelector("#civilian3_container").classList.remove("civilian1_walk");
   document.querySelector("#robber1_container").removeEventListener("click", dieRobber);
+  document.querySelector("#robber2_container").removeEventListener("click", dieRobber);
+  document.querySelector("#robber3_container").removeEventListener("click", dieRobber);
   document.querySelector("#civilian1_container").removeEventListener("click", dieCivilian);
+  document.querySelector("#civilian2_container").removeEventListener("click", dieCivilian);
+  document.querySelector("#civilian3_container").removeEventListener("click", dieCivilian);
 }
