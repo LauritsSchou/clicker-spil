@@ -139,6 +139,7 @@ function decrementLives() {
 }
 function displayDecrementLives() {
   console.log(`#heart${lives}`);
+  document.querySelector(`#heart${lives + 1}`).classList.add("blink");
   document.querySelector(`#heart${lives + 1}`).classList.remove("active_heart");
   document.querySelector(`#heart${lives + 1}`).classList.add("broken_heart");
 }
