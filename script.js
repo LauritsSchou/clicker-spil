@@ -11,6 +11,8 @@ function start() {
   registerClicks();
   animationRestart();
   addSpeed();
+  document.querySelector("#sound_music").play();
+  document.querySelector("#sound_music").loop = true;
 }
 function startAnimation() {
   document.querySelector("#robber1_container").classList.add("robber1_walk");
@@ -60,6 +62,8 @@ function dieRobber() {
   robber.classList.add("paused");
   robber.querySelector("img").classList.add("rotate");
   robber.addEventListener("animationend", deadRobber);
+  document.querySelector("#sound_dieRobber").play();
+  document.querySelector("#sound_dieRobber").currentime = 0;
   incrementPoints();
 }
 
@@ -94,6 +98,9 @@ function dieCivilian() {
   civilian.classList.add("paused");
   civilian.querySelector("img").classList.add("rotate");
   civilian.addEventListener("animationend", deadCivilian);
+  document.querySelector("#sound_dieCivilian").play();
+  document.querySelector("#sound_dieCivilian").volume = 0.3;
+  document.querySelector("#sound_dieCivilian").currentTime = 0;
   decrementLives();
 }
 
@@ -147,17 +154,19 @@ function displayDecrementLives() {
 function levelComplete() {
   document.querySelector("#level_complete").classList.remove("hidden");
   document.querySelector("#levelCompleteMessage").textContent = `Congratulations. You killed ${points} robbers`;
-
+  document.querySelector("#sound_levelComplete").play();
   end();
 }
 
 function gameOver() {
   console.log("game over");
+  document.querySelector("#sound_gameOver").play();
   document.querySelector("#game_over").classList.remove("hidden");
   end();
 }
 
 function end() {
+  document.querySelector("#sound_music").pause();
   document.querySelector("#robber1_container").classList.remove("robber1_walk");
   document.querySelector("#robber2_container").classList.remove("robber1_walk");
   document.querySelector("#robber3_container").classList.remove("robber1_walk");
