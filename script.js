@@ -23,6 +23,9 @@ function start() {
   animationRestart();
   addSpeed();
   startTimer();
+  startMusic();
+}
+function startMusic() {
   document.querySelector("#sound_music").play();
   document.querySelector("#sound_music").loop = true;
 }
