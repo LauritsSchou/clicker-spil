@@ -193,7 +193,7 @@ function displayDecrementLives() {
 
 function levelComplete() {
   document.querySelector("#level_complete").classList.remove("hidden");
-  document.querySelector("#levelCompleteMessage").textContent = `Congratulations. You killed ${points} robbers`;
+  document.querySelector("#levelCompleteMessage").textContent = `You killed ${points} robbers`;
   document.querySelector("#sound_levelComplete").play();
   end();
 }

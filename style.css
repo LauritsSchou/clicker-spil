@@ -1,9 +1,28 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  text-align: center;
 }
 img {
   width: 100%;
+}
+button {
+  padding: 0.5em 1em;
+  font-size: 2em;
+  margin: auto;
+  background-color: orange;
+  color: #fff4bf;
+  border: 10px solid #ffc72e;
+  cursor: pointer;
+  border-radius: 10px;
+}
+p {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 1em 0 1.5em;
+}
+h2 {
+  font-size: 4em;
 }
 #screen {
   aspect-ratio: 16/9;
@@ -128,12 +147,13 @@ img {
 
 #time_container {
   position: absolute;
-  width: 20%;
+  width: 30%;
+  height: 2.5%;
   aspect-ratio: 30/6;
-  border: 2px solid black;
+
   background-color: rgba(208, 204, 204, 0.383);
   top: 1%;
-  left: 40%;
+  left: 35%;
 }
 
 #time_sprite {
@@ -191,19 +211,4 @@ img {
 #game.hidden,
 #start.hidden {
   display: none;
-}
-button {
-  padding: 0.5em 1em;
-  font-size: 2em;
-  margin: auto;
-  background-color: orange;
-  color: #fff4bf;
-  border: 10px solid #ffc72e;
-  cursor: pointer;
-  border-radius: 10px;
-}
-p {
-  text-align: center;
-  font-size: 1.5em;
-  margin: 1em 0 1.5em;
 }

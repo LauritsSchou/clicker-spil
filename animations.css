@@ -94,14 +94,14 @@
 
 .pulse {
   animation-name: pulse;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
 }
 .shrink {
   animation-name: shrink;
-  animation-duration: 60s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
