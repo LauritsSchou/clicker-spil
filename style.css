@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 img {
   width: 100%;
@@ -121,6 +122,27 @@ img {
   grid-template-columns: 2fr 1.5fr;
   font-size: 1em;
 }
+#time_board {
+  top: 0%;
+}
+
+#time_container {
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 30/6;
+  border: 2px solid black;
+  background-color: rgba(208, 204, 204, 0.383);
+  top: 1%;
+  left: 40%;
+}
+
+#time_sprite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: limegreen;
+  transform-origin: right;
+}
 #robber_count {
   white-space: nowrap;
   text-align: right;
@@ -128,12 +150,7 @@ img {
 #robber_image {
   width: 1em;
 }
-/* #time_board {
-  width: 5%;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-} */
+
 .active_heart {
   filter: drop-shadow(0 0 2px yellow);
 }
@@ -159,8 +176,34 @@ img {
   background-image: linear-gradient(150deg, #20c903 0%, #09793b 100%);
   color: #ffffff;
 }
+#start {
+  grid-area: 1 /1;
+  z-index: 999;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-image: linear-gradient(150deg, #20c903 0%, #09793b 100%);
+  color: #ffffff;
+}
 .hidden,
 #game_over.hidden,
-#level_complete.hidden {
+#level_complete.hidden,
+#game.hidden,
+#start.hidden {
   display: none;
+}
+button {
+  padding: 0.5em 1em;
+  font-size: 2em;
+  margin: auto;
+  background-color: orange;
+  color: #fff4bf;
+  border: 10px solid #ffc72e;
+  cursor: pointer;
+  border-radius: 10px;
+}
+p {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 1em 0 1.5em;
 }

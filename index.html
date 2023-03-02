@@ -49,22 +49,27 @@
             </div>
           </div>
           <div id="time_board">
-            <div id="time_board_container">
-              <!-- <img
-                id="time_board_sprite"
-                src="images/png/Main_UI/Clock_Icon.png"
-              /> -->
+            <div id="time_container">
+              <div id="time_sprite" class=""></div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="start"></div>
-      <div id="game_over" class="hidden"><h1>GAME OVER</h1></div>
+      <div id="start">
+        <h2>Cops 'n Robbers</h2>
+        <p>Shoot as many robbers as you can before the timer runs out. But be careful! If you shoot the civilians your hearts will deplete.</p>
+        <button id="btn_start" class="pulse">Start game</button>
+      </div>
+      <div id="game_over" class="hidden">
+        <h2>Game over</h2>
+        <button id="btn_restart" class="pulse">Return to start</button>
+      </div>
       <div id="level_complete" class="hidden">
-        <h1>
+        <h2>
           <p id="levelCompleteMessage"></p>
-        </h1>
+        </h2>
+        <button id="btn_restart2" class="pulse">Return to start</button>
       </div>
     </div>
     <audio id="sound_dieRobber" src="sounds/hurt_dying-38957.mp3"></audio>
