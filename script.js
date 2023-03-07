@@ -70,12 +70,12 @@ function addPosition() {
 }
 function registerClicks() {
   console.log("registerclicks");
-  document.querySelector("#robber1_container").addEventListener("click", dieRobber);
-  document.querySelector("#robber2_container").addEventListener("click", dieRobber);
-  document.querySelector("#robber3_container").addEventListener("click", dieRobber);
-  document.querySelector("#civilian1_container").addEventListener("click", dieCivilian);
-  document.querySelector("#civilian2_container").addEventListener("click", dieCivilian);
-  document.querySelector("#civilian3_container").addEventListener("click", dieCivilian);
+  document.querySelector("#robber1_container").addEventListener("mousedown", dieRobber);
+  document.querySelector("#robber2_container").addEventListener("mousedown", dieRobber);
+  document.querySelector("#robber3_container").addEventListener("mousedown", dieRobber);
+  document.querySelector("#civilian1_container").addEventListener("mousedown", dieCivilian);
+  document.querySelector("#civilian2_container").addEventListener("mousedown", dieCivilian);
+  document.querySelector("#civilian3_container").addEventListener("mousedown", dieCivilian);
 }
 function animationRestart() {
   document.querySelector("#robber1_container").addEventListener("animationiteration", robberRestart);
@@ -114,7 +114,7 @@ function deadRobber() {
   if (isGameRunning) {
     robberRestart.call(this);
   }
-  robber.addEventListener("click", dieRobber);
+  robber.addEventListener("mousedown", dieRobber);
 }
 function robberRestart() {
   console.log("robberrestart");
@@ -153,7 +153,7 @@ function deadCivilian() {
   if (isGameRunning) {
     civilianRestart.call(this);
   }
-  civilian.addEventListener("click", dieCivilian);
+  civilian.addEventListener("mousedown", dieCivilian);
 }
 function civilianRestart() {
   console.log("civilianrestart");

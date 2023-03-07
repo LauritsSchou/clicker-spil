@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   text-align: center;
+  user-select: none;
 }
 img {
   width: 100%;
@@ -51,27 +52,33 @@ h2 {
 #robber1_container {
   width: 4%;
   position: absolute;
+  perspective: 300px;
 }
 #robber2_container {
   width: 4%;
   position: absolute;
+  perspective: 300px;
 }
 #robber3_container {
   width: 4%;
   position: absolute;
+  perspective: 300px;
 }
 
 #civilian1_container {
   width: 3%;
   position: absolute;
+  perspective: 300px;
 }
 #civilian2_container {
   width: 3%;
   position: absolute;
+  perspective: 300px;
 }
 #civilian3_container {
   width: 3%;
   position: absolute;
+  perspective: 300px;
 }
 .position1 {
   bottom: 0%;
